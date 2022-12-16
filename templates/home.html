@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+</head>
+
+
+
+<body>
+    <div style="display:block">
+        <h2>Welcome to my wordcloud!</h2>
+        <form action="/" method="post">
+            {% csrf_token %}
+                <input type="text" name="nameBox" style="display: block; margin-bottom: 2%;" placeholder="Your Name" >
+                <textarea name="textBox" placeholder="Type in the paragraph that you want turned into a wordcloud here" rows="4" cols="50"></textarea>
+                <button type="submit" style="display: block;">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
